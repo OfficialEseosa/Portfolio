@@ -1,0 +1,165 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Apply Google Font */
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+/* Header Styles */
+header {
+    background-color: #1a237e; /* Dark blue bar */
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    width: 80%; /* Make the bar narrower */
+    margin: 1rem auto; /* Center the bar */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Add subtle shadow */
+}
+
+header h1 {
+    font-weight: 700; /* Bold font for title */
+    font-size: 2rem; /* Larger font size for the title */
+    margin: 0;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    display: flex;
+    justify-content: space-evenly; /* Space links evenly */
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0 0; /* Adjust spacing below the title */
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #bbdefb; /* Light blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Change to white on hover */
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 8px;
+    background-color: #1c1c1c; /* Dark gray background for sections */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7); /* Add subtle shadow */
+}
+
+section h2 {
+    font-weight: 700; /* Bold section headers */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #90caf9; /* Light blue for headers */
+}
+
+/* Project Section Styles */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 1.5rem; /* Space between cards */
+}
+
+.project {
+    background-color: #2a2a2a; /* Slightly lighter background for project cards */
+    border: 1px solid #3c3c3c; /* Border for cards */
+    padding: 1rem;
+    border-radius: 8px; /* Rounded corners for cards */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth animations */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); /* Add shadow on hover */
+}
+
+.project h3 {
+    color: #90caf9; /* Light blue for project titles */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0;
+}
+
+.project a {
+    color: #64b5f6; /* Light blue for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Resume Section Styles */
+#resume iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    margin-top: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d47a1; /* Darker blue footer */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        width: 90%; /* Adjust header width for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 1rem; /* Space between image and text */
+}
+
+.headshot {
+    width: 120px; /* Set a fixed width */
+    height: auto; /* Maintain the aspect ratio */
+    border: 2px solid #3c3c3c; /* Add a subtle border */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); /* Add shadow */
+    border-radius: 5px; /* Slightly rounded corners for a polished look */
+    object-fit: cover; /* Ensure the image fills the frame without distortion */
+}
+
+
+.about-text {
+    flex: 1; /* Ensure the text takes the remaining space */
+}
